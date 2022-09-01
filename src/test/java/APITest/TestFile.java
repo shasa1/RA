@@ -30,7 +30,7 @@ public class TestFile {
                 when().get("https://jsonplaceholder.typicode.com/users").
                 then().extract().response();
         System.out.println("Response: "+response.prettyPrint());
-        Assert.assertEquals(400,response.statusCode());
+        Assert.assertEquals(200,response.statusCode());
 
     }
 }
